@@ -33,6 +33,7 @@ import org.apache.zookeeper.data.ACL;
 import org.apache.zookeeper.server.auth.DigestAuthenticationProvider;
 import org.junit.Assert;
 import org.junit.ClassRule;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
 import org.slf4j.Logger;
@@ -325,6 +326,7 @@ public class ZKClientTest {
     }
   }
 
+  @Ignore
   @Test (timeout = 120000L)
   public void testDeadlock() throws IOException, InterruptedException {
     // This is to test deadlock bug as described in (TWILL-110)
